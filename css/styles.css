@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+.favs {
+    color: #CC2424;
+    font-size: xx-large;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+#offer{
+    padding: 5px 0;
+    background-color: #1CD1B0;
+}
+
+#offer-img {
+    background-image: url('../img/Descuentos-20.png');
+    height: 15px;
+    background-position: 30px 0;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+header{
+    padding: 18px 0;
+}
+
+header, footer, .ver-mas {
+    background-color: #00669F;
+    color: white;
+}
+
+.card, .card-bg, .card-img {
+    box-shadow: 0px 2px 2px 0px #00000040;
+}
+
+header {
+    box-shadow: 0px 5px 3px #00000040;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    padding-left: 30px;
+    }
+
+h1, h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+}
+
+main {
+    padding-top: 30px;
+}
+
+.card {
+    background: #F3F3F3;
+    width: 300px;
+    height: 500px;
+    position: relative;
+    left: calc(50% - 150px);
+    margin-bottom: 40px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.card p {
+    font-size:15px;
+    text-align: left;
+    padding: 5px 17px; 
+}
+
+.ver-mas, h2 {
+    text-align: center;
+    padding: 15px 0; 
+}
+
+.card-bg {
+    height: 180px;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    border-radius: 25px 25px 0 0;   
+}
+
+#bg-batman {
+    background-image: url('../img/bg-batman.jpg');
+    background-position: 75% 50%;
+    background-size: 550px;
+}
+
+#bg-wonderw {
+    background-image: url('../img/bg-wonderw.jpg');
+    background-position: 80% 45%;
+    background-size: 350px;
+}
+
+#bg-superman {
+    background-image: url('../img/bg-superman.jpg');
+    background-position: 30% 25%;
+    background-size: 550px;
+}
+
+.card-img {
+    height: 130px;
+    width: 130px;
+    position:absolute;
+    left: 85px;
+    top: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+#img-batman {
+    background-image: url('../img/batman.jpg');
+    background-position: 58% 0;
+    background-size: 400px;
+}
+
+#img-wonderw {
+    background-image: url('../img/wonderw.jpg');
+    background-position: 50% 0;
+    background-size: 150px; 
+}
+
+#img-superman {
+    background-image: url('../img/superman.jpg');
+    background-position: 50% 45%;
+    background-size: 200px; 
+}
+
+.ver-mas {
+    width: 140px;
+    position: absolute;
+    bottom: 15px;
+    left: 80px;
+    border-radius: 5px;
+}
+
+footer {
+    position: absolute;
+    top: 1800px;
+    left: 0;
+    width: 100%;
+    padding: 28px 0;
+    text-align: center;
+}
