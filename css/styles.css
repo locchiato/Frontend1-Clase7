@@ -18,18 +18,18 @@
     --card-height: 490px;
     --card-left: calc(50% - var(--card-width)/2);
 
-    --bg-size: 550px;
+    --bg-size: 500px;
     --bg-height: 180px;
-    --bg-batman: url('../img/bg-batman.jpg');
-    --bg-wonderw: url('../img/bg-wonderw.jpg');
-    --bg-superman: url('../img/bg-superman.jpg');
+    --bg-batman: url('../img/bg-b.jpg');
+    --bg-wonderw: url('../img/bg-w.jpg');
+    --bg-superman: url('../img/bg-s.jpg');
 
     --img-size: 130px;
     --img-left: calc(var(--card-width)/2 - var(--img-size)/2);
     --img-top: calc(var(--bg-height) - 10px - var(--img-size)/2);
-    --img-batman: url('../img/batman.jpg');
-    --img-wonderw: url('../img/wonderw.jpg');
-    --img-superman: url('../img/superman.jpg');
+    --img-batman: url('../img/bman.jpg');
+    --img-wonderw: url('../img/ww.jpg');
+    --img-superman: url('../img/sman.jpg');
 
     --boton-width: 130px;
     --boton-left: calc(var(--card-width)/2 - var(--boton-width)/2);
@@ -148,7 +148,7 @@ main {
 }
 
 #img-batman {
-    background-size: 400px;
+    background-size: 140px;
     background-image: var(--img-batman);
     background-position: 58% 0;
 }
@@ -160,7 +160,7 @@ main {
 }
 
 #img-superman {
-    background-size: 200px; 
+    background-size: 140px; 
     background-image: var(--img-superman);
     background-position: 50% 45%;
 }
