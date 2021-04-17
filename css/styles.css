@@ -109,12 +109,12 @@ main {
 }
 
 section {
-    position: absolute;
     display: flex;
-    justify-content: space-between;
+    position: absolute;
     left: var(--cards-left);
-    top: calc((var(--page-height))/2 - var(--card-height)/2);
     width: var(--cards-width);
+    justify-content: space-between;
+    top: calc((var(--page-height))/2 - var(--card-height)/2);
 }
 
 .card,
