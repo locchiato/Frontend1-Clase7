@@ -1,0 +1,26 @@
+:root {
+    --heart-color: #CC2424;
+    --header-color: #00669F;
+    --card-color: #F3F3F3;
+    --offer-color: #1CD1B0;
+    --shadow-color: #00000025;
+    --page-height: 1000px;
+    --section-width: 1020px;
+    --card-width: 300px;
+    --card-height: 530px;
+    --card-left: calc(50% - var(--card-width)/2);
+    --bg-size: cover;
+    --bg-pos: 75% 50%;
+    --bg-height: 190px;
+    --bg-batman: url('../img/bg-b.jpg');
+    --bg-wonderw: url('../img/bg-hq.jpg');
+    --bg-superman: url('../img/bg-s.jpg');
+    --img-size: calc(var(--card-width) * 0.4);
+    --img-left: calc(var(--card-width)/2 - var(--img-size)/2);
+    --img-top: calc(var(--bg-height) - 10px - var(--img-size)/2);
+    --img-batman: url('../img/bman.jpg');
+    --img-wonderw: url('../img/hquinn.jpg');
+    --img-superman: url('../img/sman.jpg');
+    --boton-width: var(--img-size);
+    --boton-left: var(--img-left);
+}
