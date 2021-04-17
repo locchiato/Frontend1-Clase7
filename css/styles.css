@@ -124,6 +124,7 @@ section {
 }
 
 .card {
+    display: inline-block;
     position: relative;
     width: var(--card-width);
     height: var(--card-height);
