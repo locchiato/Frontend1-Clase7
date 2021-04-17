@@ -20,11 +20,11 @@ form p {
 }
 
 form * {
+    font-family: "Karla", sans-serif;
     margin: 10px 0;
 }
 
 form p a {
-    font-family: "Karla", sans-serif;
     text-decoration: none;
     color: #00669F;
 }
@@ -44,7 +44,6 @@ select {
     height: 60px;
     font-size: 20px;
     padding: 12px 20px;
-    display: inline-block;
     border: 1.53px solid #000000;
     font-family: "Karla", sans-serif;
 }
@@ -98,13 +97,13 @@ input[type=submit] {
 
 #logo {
     padding: 3px 20px 3px 10px;
-    position: relative;
 }
 
 nav {
     height: 40px;
     position: relative;
-    background-color: black;
+    background-color: #001D2D;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 ul {
@@ -137,12 +136,12 @@ footer,
 }
 
 .boton-vm {
-    width: var(--boton-width);
-    left: var(--boton-left);
     bottom: 15px;
     padding: 12px;
     position: absolute;
     border-radius: 5px;
+    left: var(--boton-left);
+    width: var(--boton-width);
 }
 
 .card h2,
@@ -155,21 +154,20 @@ header {
     z-index: 1;
     height: 80px;
     position: sticky;
-    display: flex;
     align-items: center;
     box-shadow: 0px 5px 2px var(--shadow-color);
 }
 
-header h1 {
+h1 {
+    top: 27px;
+    left: 130px;
     font-size: 30px;
     position: absolute;
-    left: 130px;
-    top: 27px;
 }
 
 main {
-    height: var(--page-height);
     position: relative;
+    height: var(--page-height);
 }
 
 section {
