@@ -124,10 +124,9 @@ section {
 }
 
 .card {
+    position: relative;
     width: var(--card-width);
     height: var(--card-height);
-    position: relative;
-    flex-direction: column;
     background-color: var(--card-color);
 }
 
