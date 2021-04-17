@@ -7,6 +7,7 @@
     --offer-color: #1CD1B0;
     --shadow-color: #00000025;
     --page-height: 1000px;
+    --form-width: 45%;
     --cards-width: 1000px;
     --cards-left: calc(50% - var(--cards-width)/2);
     --card-width: 300px;

@@ -8,11 +8,25 @@
 }
 
 form {
-    width: 40%;
+    width: var(--form-width);
     height: 30%;
     position: absolute;
     left: 30%;
-    top: 30%;
+    top: 15%;
+}
+
+form p {
+    text-align: center;
+}
+
+form * {
+    margin: 10px 0;
+}
+
+form p a {
+    font-family: "Karla", sans-serif;
+    text-decoration: none;
+    color: #00669F;
 }
 
 h2 {
@@ -20,30 +34,58 @@ h2 {
     font-size: 72px;
     font-weight: bold;
     color: #333333;
-    margin-bottom: 55px;
 }
 
 input[type=text],
-input[type=password] {
-    height: 60px;
+input[type=email],
+input[type=password],
+select {
     width: 100%;
+    height: 60px;
     font-size: 20px;
     padding: 12px 20px;
     display: inline-block;
-    margin-bottom: 20px;
     border: 1.53px solid #000000;
     font-family: "Karla", sans-serif;
 }
 
+#botones {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
 button[type=submit] {
+    width: 100%;
+}
+
+input[type=submit],
+button[type=submit] {
+    background-color: #1CD1B0;
+}
+
+input[type=reset] {
+    background-color: #888888;
+    color: white;
+}
+
+#campos {
+    margin: 30px 0;
+}
+
+input[type=reset],
+input[type=submit] {
+    width: 48%;
+}
+
+button[type=submit],
+input[type=reset],
+input[type=submit] {
     font-size: 24px;
     font-family: "Karla", sans-serif;
     font-weight: bold;
-    background-color: #1CD1B0;
     border-radius: 23px;
-    margin-top: 40px;
-    padding: 5px;
-    width: 100%;
+    padding: 10px;
     border: none;
 }
 

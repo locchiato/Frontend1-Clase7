@@ -12,7 +12,9 @@
 <body>
     <div id="offer">20% de descuento en todos los productos!</div>
     <header>
-        <img id="logo" src="../img/logo.svg"></img>
+        <a href="../">
+            <img id="logo" src="../img/logo.svg"></img>
+        </a>
         <h1>
             Super Tienda
         </h1>
@@ -20,10 +22,12 @@
     <main>
         <form action="../index.html" method="post">
             <h2>Login</h2>
-            <input type="text" class="login-i" id="user" placeholder="Usuario">
-            <input type="password" class="login-i" id="pass" placeholder="Contraseña">
+            <div id="campos">
+                <input type="text" class="login-i" id="user" placeholder="Usuario">
+                <input type="password" class="login-i" id="pass" placeholder="Contraseña">
+            </div>
             <button type="submit">Entrar</button>
-            <p><a href="models/register.html" target="_blank">¿No tienes una cuenta?</a> Registrarme</p>
+            <p><a href="register.html">¿No tienes una cuenta?</a> Registrarme</p>
         </form>
     </main>
     <footer>
