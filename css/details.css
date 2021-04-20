@@ -1,0 +1,92 @@
+@import url('styles.css');
+main {
+    background-image: var(--bg-wonderw);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section {
+    justify-content: center;
+}
+
+h2 {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    color: var(--details-color);
+}
+
+.card {
+    display: flex;
+    height: 456px;
+    width: 546px;
+    position: relative;
+    border-radius: 45px;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--card-color);
+}
+
+.card * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-img {
+    position: absolute;
+    background-size: cover;
+    top: -100px;
+    left: calc(546px/2 - 160px/2);
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-image: var(--img-wonderw);
+}
+
+.card a {
+    bottom: 0;
+    height: 20%;
+    width: 100%;
+    display: flex;
+    color: white;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border-radius: 0 0 45px 45px;
+    background-color: var(--details-color);
+}
+
+p {
+    width: 500px;
+    font-size: 17px;
+}
+
+#img-heart {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 70px;
+    top: 40px;
+}
+
+#iconos {
+    position: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#iconos * {
+    margin: 15px;
+    width: 60px;
+    height: 60px;
+}
+
+#name,
+#real-name {
+    color: var(--details-color);
+}
+
+#real-name {
+    font-style: italic;
+}
