@@ -1,12 +1,6 @@
 @import url('styles.css');
-section {
-    width: var(--form-width);
-    flex-direction: column;
-}
-
 form * {
     font-family: "Karla", sans-serif;
-    width: var(--form-width);
 }
 
 h2 {

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/añadir.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="offer">20% de descuento en todos los productos!</div>
+    <header>
+        <a href="../">
+            <img id="logo" src="../img/logo.svg">
+        </a>
+        <h1>
+            Super Tienda
+        </h1>
+    </header>
+    <main>
+        <nav>
+            <ul type="none">
+                <a href="models/contacto.html">
+                    <li>Contacto</li>
+                </a>
+                <a href="models/register.html">
+                    <li>Registrarme</li>
+                </a>
+                <a href="models/login.html">
+                    <li>Ingresar</li>
+                </a>
+            </ul>
+        </nav>
+        <section>
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+            <form action="../" method="GET">
+                <fieldset>
+                    <label class="requerido" for="name">
+                        Nombre
+                    </label>
+                    <input type="text" name="name">
+                    <label for="date">
+                        Fecha
+                    </label>
+                    <input type="date" name="date">
+                    <textarea name="description" placeholder="Descripción" cols="30" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label class="requerido" for="kind">
+                        Especie
+                    </label>
+                    <select name="kind">
+                        <option value="" selected disabled hidden></option>
+                        <option value="Human">Humano</option>
+                        <option value="Deviant">Desviante</option>
+                        <option value="Eternal">Eterno</option>
+                        <option value="Kriptonian">Kryptoniano</option>
+                        <option value="Unknown">Desconocido</option>
+                    </select>
+                    <label for="photo">Agregar Foto</label>
+                    <input type="file" name="photo" id="foto" />
+                    <div id="poderes">
+                        <label>
+                            Poderes
+                        </label>
+                        <p>
+                            <input type="checkbox" id="cbox1" value="fly">
+                            <label for="cbox1">Volar</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="cbox2" value="s-Intel">
+                            <label for="cbox2">Super-Inteligencia</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="cbox3" value="laser">
+                            <label for="cbox3">Vista de rayo láser</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="cbox4" value="money">
+                            <label for="cbox4">Billetera gorda</label>
+                        </p>
+                    </div>
+                    <hr />
+                    <div id="personajes">
+                        <label for="type">Tipo de personaje</label>
+                        <p>
+                            <input type="radio" id="heroe" name="type" value="hero">
+                            <label for="heroe">Héroe / Heroina</label>
+                        </p>
+                        <p>
+                            <input type="radio" id="villano" name="type" value="villan">
+                            <label for="villano">Villano / Villana</label>
+                        </p>
+                    </div>
+                </fieldset>
+                <button id="añadir">
+                </button>
+            </form>
+        </section>
+    </main>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a Leandro Occhiato</p>
+    </footer>
+</body>
+
+</html>

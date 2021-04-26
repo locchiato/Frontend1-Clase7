@@ -9,23 +9,13 @@
     font-family: 'Roboto', sans-serif;
 }
 
-*:focus {
-    outline: none;
-}
-
 main {
-    height: 952px;
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    min-height: var(--main-height);
 }
 
 section {
-    display: flex;
+    padding: calc((var(--main-height) - var(--card-height) - var(--bg-height))/2) 0;
     align-items: center;
-    flex-direction: row;
-    width: var(--section-width);
-    justify-content: space-between;
+    border-radius: 50px;
+    align-items: center;
 }

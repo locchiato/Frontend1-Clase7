@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Karla:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 :root {
     --offer-color: #1CD1B0;
@@ -7,9 +7,9 @@
     --heart-color: #CC2424;
     --shadow-color: #00000025;
     --details-color: #2C0187;
-    --page-height: 1120px;
+    --main-height: 950px;
     --form-width: 430px;
-    --section-width: 1020px;
+    --section-width: 1100px;
     --section-top: calc(50% - var(--card-height)/2);
     --section-left: calc(50% - var(--section-width)/2);
     --card-width: 300px;

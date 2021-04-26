@@ -1,0 +1,21 @@
+.card:hover>.card-img {
+    width: calc(var(--img-size) + 50px);
+    height: calc(var(--img-size) + 50px);
+    transition: 1s;
+}
+
+.card:hover>.card-bg {
+    height: calc(var(--bg-height) + 50px);
+    transition: 1s;
+}
+
+.card:hover>a>.boton-vm {
+    left: calc(var(--boton-left) + 25px);
+    transition: 1s;
+}
+
+.card:hover {
+    width: calc(var(--card-width) + 50px);
+    height: calc(var(--card-height) + 50px);
+    transition: 1s;
+}
