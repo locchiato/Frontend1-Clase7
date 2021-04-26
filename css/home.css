@@ -116,7 +116,6 @@ footer {
     height: 82px;
     position: fixed;
     top: calc(50% - 41px);
-    content: url("../img/plus.svg");
 }
 
 #plus:hover {
