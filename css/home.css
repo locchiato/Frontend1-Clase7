@@ -111,13 +111,14 @@ footer {
 }
 
 #plus {
+    right: 5%;
     width: 82px;
     height: 82px;
-    right: 5%;
     position: fixed;
     top: calc(50% - 41px);
+    content: url("../img/plus.svg");
 }
 
 #plus:hover {
-    content: url("../img/button2.svg");
+    content: url("../img/plus2.svg");
 }

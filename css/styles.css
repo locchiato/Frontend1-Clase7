@@ -17,5 +17,5 @@ section {
     padding: calc((var(--main-height) - var(--card-height) - var(--bg-height))/2) 0;
     align-items: center;
     border-radius: 50px;
-    align-items: center;
+    margin-left: 50px;
 }
