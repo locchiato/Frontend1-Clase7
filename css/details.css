@@ -18,8 +18,8 @@ h2 {
     width: 546px;
     position: relative;
     border-radius: 45px;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     background-color: var(--card-color);
 }
 

@@ -1,21 +1,24 @@
 @import url('./variables.css');
 @import url('./header.css');
-* {
-    margin: 0;
-    padding: 0;
-    font-style: normal;
-    font-weight: normal;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-}
-
 main {
+    display: flex;
+    align-items: center;
     min-height: var(--main-height);
+    padding: 0 10px;
 }
 
 section {
-    padding: 100px 0;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1100px;
+    padding-left: 20px;
     border-radius: 50px;
-    margin-left: 50px;
+    justify-content: space-around;
+}
+
+footer {
+    width: 100%;
+    padding: 24px;
+    text-align: center;
 }

@@ -3,12 +3,6 @@ form * {
     font-family: "Karla", sans-serif;
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
 form {
     width: var(--form-width);
 }

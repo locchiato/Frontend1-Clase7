@@ -1,8 +1,4 @@
 @import url("./styles.css");
-main {
-    padding: 80px 10px 40px;
-}
-
 section {
     color: white;
     background-color: var(--header-color);
@@ -18,6 +14,7 @@ section * {
     font-weight: 300;
     font-style: normal;
     align-self: center;
+    width: 100%;
 }
 
 section>p {
@@ -52,7 +49,9 @@ textarea {
 }
 
 fieldset>input,
-select {
+select,
+textarea,
+#personajes {
     width: 100%;
     margin-bottom: 30px;
 }
@@ -64,13 +63,14 @@ fieldset {
     border: 0;
 }
 
+#personajes,
+textarea {
+    height: 350px;
+}
+
 label {
     margin-bottom: 10px;
     display: block;
-}
-
-#personajes {
-    height: 350px;
 }
 
 hr {
@@ -87,8 +87,6 @@ textarea {
 }
 
 textarea {
-    width: 100%;
-    height: 350px;
     resize: none;
 }
 

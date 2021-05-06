@@ -1,3 +1,4 @@
+/*
 .card:hover>.card-img {
     width: calc(var(--img-size) + 50px);
     height: calc(var(--img-size) + 50px);
@@ -18,4 +19,20 @@
     width: calc(var(--card-width) + 50px);
     height: calc(var(--card-height) + 50px);
     transition: 1s;
+}
+*/
+
+.card,
+.boton-vm,
+#plus {
+    transition: all 1s;
+}
+
+.card:hover,
+.boton-vm:hover {
+    transform: scale(1.15);
+}
+
+.fa-heart:hover {
+    color: slateblue;
 }
