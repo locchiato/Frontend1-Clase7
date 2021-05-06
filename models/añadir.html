@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Heroe</title>
     <link rel="stylesheet" type="text/css" href="../css/añadir.css">
-    <title>Document</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         <section>
             <h2>Añadí tu super!</h2>
             <p>Agregá tu personaje favorito completando las opciones.</p>
-            <form action="../" method="GET">
+            <form action="../">
                 <fieldset>
                     <label class="requerido" for="name">
                         Nombre
@@ -64,39 +64,27 @@
                     <input type="file" name="photo" id="foto" />
                     <div id="personajes">
                         <div id="poderes">
-                            <label>
-                            Poderes
-                        </label>
-                            <p>
-                                <input type="checkbox" id="cbox1" value="fly">
-                                <label for="cbox1">Volar</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" id="cbox2" value="s-Intel">
-                                <label for="cbox2">Super-Inteligencia</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" id="cbox3" value="laser">
-                                <label for="cbox3">Vista de rayo láser</label>
-                            </p>
-                            <p>
-                                <input type="checkbox" id="cbox4" value="money">
-                                <label for="cbox4">Billetera gorda</label>
-                            </p>
+                            <label>Poderes</label>
+                            <label for="cbox1"><input type="checkbox" id="cbox1" value="fly">
+                            Volar</label>
+                            <label for="cbox2"><input type="checkbox" id="cbox2" value="s-Intel">
+                            Super-Inteligencia</label>
+                            <label for="cbox3"><input type="checkbox" id="cbox3" value="laser">
+                            Vista de rayo láser</label>
+                            <label for="cbox4"><input type="checkbox" id="cbox4" value="money">
+                            Billetera gorda</label>
                         </div>
                         <hr />
                         <label for="type">Tipo de personaje</label>
-                        <p>
-                            <input type="radio" id="heroe" name="type" value="hero">
-                            <label for="heroe">Héroe / Heroina</label>
-                        </p>
-                        <p>
-                            <input type="radio" id="villano" name="type" value="villan">
-                            <label for="villano">Villano / Villana</label>
-                        </p>
+                        <label for="heroe">
+                                <input type="radio" id="heroe" name="type" value="hero">
+                                Héroe / Heroina</label>
+                        <label for="villano">
+                                <input type="radio" id="villano" name="type" value="villan">
+                                Villano / Villana</label>
                     </div>
                 </fieldset>
-                <button id="añadir">
+                <button type="submit" id="añadir">
                 </button>
             </form>
         </section>
