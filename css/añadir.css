@@ -35,7 +35,8 @@ h2 {
 }
 
 form {
-    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 fieldset>input,
@@ -50,14 +51,12 @@ fieldset>input,
 select,
 textarea,
 #personajes {
-    width: 100%;
     margin-bottom: 30px;
 }
 
 fieldset {
-    width: 340px;
-    margin-left: 30px;
-    display: inline-block;
+    width: 50%;
+    padding: 0 15px;
     border: 0;
 }
 
@@ -118,4 +117,12 @@ input[type="radio"] {
     width: 20px;
     height: 24px;
     color: aqua
+}
+
+@media(max-width:600px) {
+    fieldset,
+    #añadir {
+        left: 0;
+        width: 100%;
+    }
 }
