@@ -30,7 +30,7 @@
 
 .card:hover,
 .boton-vm:hover {
-    transform: scale(1.15);
+    transform: scale(1.10);
 }
 
 .fa-heart:hover {
