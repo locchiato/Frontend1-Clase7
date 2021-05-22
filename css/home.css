@@ -1,14 +1,14 @@
 @import url('styles.css');
 @import url('animations.css');
 .card {
+    position: relative;
     width: var(--card-width);
     display: flex;
-    position: relative;
     flex-direction: column;
     align-items: center;
     background-color: var(--card-color);
-    margin-right: 40px;
     margin-bottom: 40px;
+    margin-right: 30px;
 }
 
 .card-bg {
