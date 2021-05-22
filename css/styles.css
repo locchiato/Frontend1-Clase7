@@ -3,6 +3,7 @@
 main {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
     min-height: var(--main-height);
     padding: 40px 20px;
@@ -14,6 +15,7 @@ section {
     align-items: center;
     justify-content: space-between;
     border-radius: 50px;
+    width: 100%;
 }
 
 footer {
