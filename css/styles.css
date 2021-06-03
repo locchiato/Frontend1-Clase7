@@ -3,6 +3,8 @@
 main {
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
     min-height: var(--main-height);
     padding: 40px 20px;
 }
@@ -10,10 +12,10 @@ main {
 section {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
-    max-width: 1100px;
+    align-items: center;
+    justify-content: space-between;
     border-radius: 50px;
-    justify-content: space-around;
+    width: 100%;
 }
 
 footer {
