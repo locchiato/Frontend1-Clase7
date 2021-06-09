@@ -24,8 +24,7 @@ function iniciarJuego() {
         return true;
     }
 
-    const res = ingresarUsuario();
-    if (!res) return 0;
+    if (!ingresarUsuario()) return;
 
     function estaCadenaEsUnEntero(cadenaACheckear) {
         return !isNaN(parseInt(cadenaACheckear));
@@ -47,6 +46,7 @@ function iniciarJuego() {
             nick +
             ", elige un número (1-Piedra, 2-Papel, 3-Tijera, 4-Spock) o * para salir: "
         );
+        if (!entrada) return null;
         while (estaCadenaEsInvalida(entrada)) {
             alert("Opcion incorrecta.");
             entrada = prompt(
@@ -54,6 +54,7 @@ function iniciarJuego() {
                 nick +
                 ", elige un número (1-Piedra, 2-Papel, 3-Tijera, 4-Spock) o * para salir: "
             );
+            if (!entrada) return null;
         }
 
         return entrada;
@@ -61,12 +62,15 @@ function iniciarJuego() {
 
     function jugar() {
         optionGamer1 = obtenerOpcion(nickGamer1);
-        if (optionGamer1 != "*")
+        if (!optionGamer1) return false;
+        if (optionGamer1 != "*") {
             optionGamer2 = obtenerOpcion(nickGamer2);
-
+            if (!optionGamer2) return false;
+        }
+        return true;
     }
 
-    jugar();
+    if (!jugar()) return;
 
     function mostrarAnimacion() {
         /*
@@ -167,7 +171,7 @@ function iniciarJuego() {
         }
 
         mostrarQuienGanoElTurno(quienGano);
-        jugar();
+        if (!jugar()) optionGamer1 = "*";
     }
 
     function mostrarQuienGanoLaPartida() {
