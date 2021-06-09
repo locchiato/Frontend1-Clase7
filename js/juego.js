@@ -52,8 +52,8 @@ function iniciarJuego() {
     jugar();
 
     function estaCadenaEsUnEntero(cadenaACheckear) {
-        const fallo = false;
-        const entero = 0;
+        let fallo = false;
+        let entero = 0;
         try {
             entero = parseInt(cadenaACheckear);
         } catch (error) {
