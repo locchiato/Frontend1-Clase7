@@ -22,7 +22,7 @@ function iniciarJuego() {
     function jugar() {
         do {
             optionGamer1 = obtenerOpcion(nickGamer1);
-            if (optionGamer1.compareTo("*") != 0) {
+            if (optionGamer1 != "*") {
                 optionGamer2 = obtenerOpcion(nickGamer2);
             }
         } while (
@@ -159,7 +159,7 @@ function iniciarJuego() {
             estaCadenaEsUnEntero(optionGamer2)
         ) {
             mostrarAnimacion();
-            quienGano = cualGana(optionGamer1, optionGamer2);
+            quienGano = cualGana(parseInt(optionGamer1), parseInt(optionGamer2));
         }
 
         mostrarQuienGanoElTurno(quienGano);
