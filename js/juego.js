@@ -26,8 +26,8 @@ function iniciarJuego() {
                 optionGamer2 = obtenerOpcion(nickGamer2);
             }
         } while (
-            optionGamer1.compareTo("*") == 0 ||
-            optionGamer2.compareTo("*") == 0
+            optionGamer1 === "*" ||
+            optionGamer2 === "*"
         );
     }
 
@@ -37,7 +37,7 @@ function iniciarJuego() {
             nick +
             ", elige un número (1-Piedra, 2-Papel, 3-Tijera, 4-Spock) o * para salir: "
         );
-        while (!estaCadenaEsUnEntero(entrada) && entrada.compareTo("*") != 0) {
+        while (!estaCadenaEsUnEntero(entrada) && entrada != "*") {
             alert("Opcion incorrecta.");
             entrada = prompt(
                 "Es el turno de " +
