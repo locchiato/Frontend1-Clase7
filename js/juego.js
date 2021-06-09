@@ -1,34 +1,44 @@
 function iniciarJuego() {
+    const OPT_MIN = 1;
+    const OPT_MAX = 4;
     let nickGamer1 = "";
     let nickGamer2 = "";
     let optionGamer1 = "";
     let optionGamer2 = "";
+    let pointsGamer1 = 0;
+    let pointsGamer2 = 0;
 
     function ingresarUsuario() {
         nickGamer1 = prompt("Ingrese el nick del usuario 1: ");
-        while (nickGamer1.length < 3) {
+        if (!nickGamer1) return false;
+        while (nickGamer1.length < 4) {
             alert("Demasiado corto.");
             nickGamer1 = prompt("Ingrese el nick del usuario 1: ");
         }
         nickGamer2 = prompt("Ingrese el nick del usuario 2: ");
-        while (nickGamer2.length < 3) {
+        if (!nickGamer2) return false;
+        while (nickGamer2.length < 4) {
             alert("Demasiado corto.");
             nickGamer2 = prompt("Ingrese el nick del usuario 2: ");
         }
+        return true;
     }
 
-    ingresarUsuario();
+    const res = ingresarUsuario();
+    if (!res) return 0;
 
-    function jugar() {
-        do {
-            optionGamer1 = obtenerOpcion(nickGamer1);
-            if (optionGamer1 != "*") {
-                optionGamer2 = obtenerOpcion(nickGamer2);
-            }
-        } while (
-            optionGamer1 === "*" ||
-            optionGamer2 === "*"
-        );
+    function estaCadenaEsUnEntero(cadenaACheckear) {
+        return !isNaN(parseInt(cadenaACheckear));
+    }
+
+    function estaCadenaEsInvalida(cadena) {
+        if (cadena === "*") return false;
+        if (!estaCadenaEsUnEntero(cadena)) return true;
+
+        const numero = parseInt(cadena);
+        if (!(numero <= OPT_MAX && numero >= OPT_MIN)) return true;
+
+        return false;
     }
 
     function obtenerOpcion(nick) {
@@ -37,7 +47,7 @@ function iniciarJuego() {
             nick +
             ", elige un número (1-Piedra, 2-Papel, 3-Tijera, 4-Spock) o * para salir: "
         );
-        while (!estaCadenaEsUnEntero(entrada) && entrada != "*") {
+        while (estaCadenaEsInvalida(entrada)) {
             alert("Opcion incorrecta.");
             entrada = prompt(
                 "Es el turno de " +
@@ -49,23 +59,14 @@ function iniciarJuego() {
         return entrada;
     }
 
-    jugar();
+    function jugar() {
+        optionGamer1 = obtenerOpcion(nickGamer1);
+        if (optionGamer1 != "*")
+            optionGamer2 = obtenerOpcion(nickGamer2);
 
-    function estaCadenaEsUnEntero(cadenaACheckear) {
-        let fallo = false;
-        let entero = 0;
-        try {
-            entero = parseInt(cadenaACheckear);
-        } catch (error) {
-            console.error(error);
-            fallo = true;
-        }
-
-        console.log("entero: " + entero + "fallo: " + (fallo ? "SI" : "NO"));
-
-        return !fallo;
     }
 
+    jugar();
 
     function mostrarAnimacion() {
         /*
@@ -76,33 +77,35 @@ function iniciarJuego() {
                 spock => tijeras y piedra
             }
             */
+        const valOption1 = parseInt(optionGamer1);
+        const valOption2 = parseInt(optionGamer2);
 
-        if (optionGamer1 === "1" || optionGamer2 === "1") {
-            if (optionGamer1 === "3" || optionGamer2 === "3") {
+        if (valOption1 == 1 || valOption2 === 1) {
+            if (valOption1 === 3 || valOption2 === 3) {
                 alert("Piedra rompe tijeras.");
             }
         }
 
-        if (optionGamer1 === "2" || optionGamer2 === "2") {
-            if (optionGamer1 === "1" || optionGamer2 === "1") {
+        if (valOption1 === 2 || valOption2 === 2) {
+            if (valOption1 === 1 || valOption2 === 1) {
                 alert("Papel envuelve piedra.");
             }
-            if (optionGamer1 === "4" || optionGamer2 === "4") {
+            if (valOption1 === 4 || valOption2 === 4) {
                 alert("Papel desaprueba Spock.");
             }
         }
 
-        if (optionGamer1 === "3" || optionGamer2 === "3") {
-            if (optionGamer1 === "2" || optionGamer2 === "2") {
+        if (valOption1 === 3 || valOption2 === 3) {
+            if (valOption1 === 2 || valOption2 === 2) {
                 alert("Tijeras corta papel.");
             }
         }
 
-        if (optionGamer1 === "4" || optionGamer2 === "4") {
-            if (optionGamer1 === "1" || optionGamer2 === "1") {
+        if (valOption1 === 4 || valOption2 === 4) {
+            if (valOption1 === 1 || valOption2 === 1) {
                 alert("Spock vaporiza piedra.");
             }
-            if (optionGamer1 === "3" || optionGamer2 === "3") {
+            if (valOption1 === 3 || valOption2 === 3) {
                 alert("Spock destroza tijeras.");
             }
         }
@@ -117,6 +120,7 @@ function iniciarJuego() {
         if (
             (op1 == 1 && op2 == 3) ||
             (op1 == 2 && op2 == 4) ||
+            (op1 == 2 && op2 == 1) ||
             (op1 == 3 && op2 == 2) ||
             (op1 == 4 && op2 == 1) ||
             (op1 == 4 && op2 == 3)
@@ -140,10 +144,10 @@ function iniciarJuego() {
     function mostrarQuienGanoElTurno(quienGano) {
         if (quienGano == 1) {
             pointsGamer1++;
-            alert("EL ganador de esta ronda es " + nickGamer1 + ".");
+            alert("El ganador de esta ronda es " + nickGamer1 + ".");
         } else if (quienGano == 2) {
             pointsGamer2++;
-            alert("EL ganador de esta ronda es " + nickGamer2 + ".");
+            alert("El ganador de esta ronda es " + nickGamer2 + ".");
         } else {
             alert("La ronda termino en empate.");
         }
