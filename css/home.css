@@ -1,4 +1,5 @@
 @import url('styles.css');
+@import url('navbar.css');
 @import url('animations.css');
 .card {
     display: flex;
@@ -32,20 +33,20 @@
 }
 
 .boton-vm {
-    text-decoration: none;
-    margin: 20px 0;
     padding: 12px;
+    margin: 20px 0;
     border-radius: 5px;
+    text-decoration: none;
     width: var(--img-size);
 }
 
 .corazoncito {
-    top: 20px;
-    left: 20px;
-    color: var(--heart-color);
-    position: absolute;
-    font-size: x-large;
     transition: color 0.8s linear 0.2s;
+    color: var(--heart-color);
+    font-size: x-large;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 
 .card,
@@ -101,12 +102,27 @@ footer {
     background-image: var(--img-superman);
 }
 
+.nbar {
+    width: 100px;
+    height: 400px;
+    float: left;
+    position: fixed;
+    background: transparent;
+    bottom: calc(50% - 250px);
+}
+
 #plus {
     right: 5%;
     width: 82px;
     height: 82px;
     position: fixed;
-    top: calc(50% - 41px);
+    bottom: calc(50% - 41px);
+    z-index: 2;
+}
+
+.nbar,
+.nbar ul {
+    left: 0;
 }
 
 #plus:hover {

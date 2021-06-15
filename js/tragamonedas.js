@@ -9,9 +9,8 @@ const premioTotal = 2500;
 const casilla = 10;
 
 function calcular(aciertos) {
-    if (aciertos > casilla) {
-        console.log("La cantidad de aciertos es invalida.");
-        return 0;
+    if (aciertos > casilla || aciertos < 0) {
+        alert("La cantidad de aciertos es invalida.");
     }
-    return aciertos * premioTotal;
+    alert("El total ganado es: $" + Math.round((aciertos * premioTotal) * 100) / 100);
 }

@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <script src="js/juego.js"></script>
     <div id="offer">20% de descuento en todos los productos!</div>
     <header>
         <div class=logo>
@@ -23,7 +22,21 @@
         </div>
         <div class="gcse-search"></div>
     </header>
-    <nav>
+    <nav id="main-navbar">
+        <select id="juegos">
+            <option value="0" hidden disabled selected>
+                Elija un juego...
+            </option>
+            <option value="1">
+                Piedra, papel, tijera o Spock
+            </option>
+            <option value="2">
+                Quitar cards
+            </option>
+            <option value="3">
+                Tragamonedas
+            </option>
+        </select>
         <ul type="none">
             <a href="models/contacto.html">
                 <li>Contacto</li>
@@ -34,15 +47,11 @@
             <a href="models/login.html">
                 <li>Ingresar</li>
             </a>
-            <a href="javascript:iniciarJuego()">
-                <li>Piedra, papel, tijera o Spock</li>
-            </a>
-
         </ul>
     </nav>
     <main>
-        <section>
-
+        <section id="principal">
+            <img id="plus" src="./img/plus.svg">
             <div class="card">
                 <div class="card-bg" id="bg-batman">
                     <i class="fas fa-heart corazoncito"></i>
@@ -77,14 +86,55 @@
                     <div class="boton-vm">Ver mas</div>
                 </a>
             </div>
-            <a href="./models/añadir.html">
-                <img id="plus" src="./img/plus.svg">
-            </a>
         </section>
+
+        <!--
+
+            <nav class="nbar">
+                <ul>
+                    <li class="life-hacks" id="btn-batman">
+                        <div class="home-icon">
+                            <div class="roof">
+                                <div class="roof-edge"></div>
+                            </div>
+                            <div class="front"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="about-icon">
+                            <div class="head">
+                                <div class="eyes"></div>
+                                <div class="beard"></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="work-icon">
+                            <div class="paper"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                            <div class="lines"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mail-icon">
+                            <div class="mail-base">
+                                <div class="mail-top"></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        -->
+
     </main>
     <footer>
         <p>Todos los derechos reservados a Leandro Occhiato</p>
     </footer>
+    <script src="js/juego.js"></script>
+    <script src="js/loteria.js"></script>
+    <script src="js/tragamonedas.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

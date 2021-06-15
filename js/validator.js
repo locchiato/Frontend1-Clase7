@@ -7,10 +7,10 @@ function validate() {
     $("#result").text("");
     var emailaddress = $("#email").val();
     if (validateEmailAddress(emailaddress)) {
-        $("#result").text(emailaddress + " is valid :)");
+        $("#result").text(emailaddress + ". El correo es valido :)");
         $("#result").css("color", "green");
     } else {
-        $("#result").text(emailaddress + " is not correct, please retry:(");
+        $("#result").text(emailaddress + " . Es incorrecto, intente nuevamente :(");
         $("#result").css("color", "red");
     }
     return false;

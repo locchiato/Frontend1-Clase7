@@ -15,4 +15,9 @@ function resultadoLoteria() {
         "\ny ganó $" + premios[resultadoNumerico]);
 }
 
-resultadoLoteria()
+function quitarCards() {
+    const cards = document.querySelectorAll(".cards")
+    cards.forEach((card) => {
+        card.classList.add('hidden')
+    })
+}
